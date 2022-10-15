@@ -1,0 +1,94 @@
+
+[
+    {
+        "id":"1",
+        "img":"./image/food-1.jpg",
+        "title":"Food-1",
+        "sub-title":"It has survived not only five centuries",
+        "Price":"$120",
+        "desc":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
+        "discount":"12%",
+        "original-price":"$160",
+        "review":" 8 Reviews and 2 comments"
+        
+
+    },
+    {
+        "id":"2",
+        "img":"./image/food-2.jpg",
+        "title":"Food-2",
+        "sub-title":"It has survived not only five centuries",
+        "Price":"$120",
+        "desc":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
+        "discount":"12%",
+        "original-price":"$160",
+        "review":" 8 Reviews and 2 comments"
+        
+
+    },
+    {
+        "id":"3",
+        "img":"./image/food-3.jpg",
+        "title":"Food-3",
+        "sub-title":"It has survived not only five centuries",
+        "Price":"$120",
+        "desc":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
+        "discount":"12%",
+        "original-price":"$160",
+        "review":" 8 Reviews and 2 comments"
+        
+
+    },
+    {
+        "id":"4",
+        "img":"./image/food-3.jpg",
+        "title":"Food-3",
+        "sub-title":"It has survived not only five centuries",
+        "Price":"$120",
+        "desc":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
+        "discount":"12%",
+        "original-price":"$160",
+        "review":" 8 Reviews and 2 comments"
+        
+
+    },
+    {
+        "id":"5",
+        "img":"./image/food-5.jpg",
+        "title":"Food-5",
+        "sub-title":"It has survived not only five centuries",
+        "Price":"$120",
+        "desc":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
+        "discount":"12%",
+        "original-price":"$160",
+        "review":" 8 Reviews and 2 comments"
+        
+
+    },
+    {
+        "id":"6",
+        "img":"./image/food-6.jpg",
+        "title":"Food-6",
+        "sub-title":"It has survived not only five centuries",
+        "Price":"$120",
+        "desc":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
+        "discount":"12%",
+        "original-price":"$160",
+        "review":" 8 Reviews and 2 comments"
+        
+
+    },
+    {
+        "id":"7",
+        "img":"./image/food-7.jpg",
+        "title":"Food-7",
+        "sub-title":"It has survived not only five centuries",
+        "Price":"$120",
+        "desc":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
+        "discount":"12%",
+        "original-price":"$160",
+        "review":" 8 Reviews and 2 comments"
+        
+
+    }
+]
