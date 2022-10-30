@@ -1,7 +1,14 @@
+import { signOut } from 'firebase/auth';
 import React from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
+import auth from '../../firebase.init';
 
 const Navbar = () => {
+    const [user] = useAuthState(auth);
+    const handleLogOut = () => {
+        signOut(auth);
+    }
     return (
         <div className="container">
             <nav className="navbar navbar-expand-lg bg-light">
@@ -29,11 +36,27 @@ const Navbar = () => {
                             <li className="nav-item">
                                 <Link className="nav-link " aria-current="page" to="/cart">Cart</Link>
                             </li>
-                            
+
                         </ul>
-                        <form className="d-flex" role="search">
-                            <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                                <button className="btn btn-outline-success" type="submit">Search</button>
+                        <form className="d-flex">
+                            {
+                                user ?
+                                    <>
+                                        <button onClick={handleLogOut} className="btn btn-outline-success"> Logout </button>
+                                        <>
+                                            <button type="button" class="btn btn-primary position-relative ms-2">
+                                                 Hi,{ user.displayName }
+                                                <span class="position-absolute top-0 start-100 translate-middle p-2 bg-success border border-light rounded-circle">
+                                                    <span class="visually-hidden">New alerts</span>
+                                                </span>
+                                            </button>
+                                        </>
+                                    </>
+                                    :
+                                    <Link to="/login" className="btn btn-outline-success"> Login </Link>
+                            }
+
+
                         </form>
                     </div>
                 </div>

@@ -1,18 +1,17 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { useCart } from 'react-use-cart';
 
 const ProductsDetails = () => {
 
     const { productId } = useParams();
     const { addItem } = useCart();
-    console.log(addItem);
+    const navigate = useNavigate();
     
     const [products, setProducts] = useState({});
 
     useEffect(() => {
 
-       
         const url = `http://localhost:5000/products/${productId}`
 
         fetch(url)
@@ -22,10 +21,11 @@ const ProductsDetails = () => {
                 setProducts(data);
             })
 
-
     }, []);
 
-  
+    const handleBuyNow = () =>{
+        navigate('/placeorder'); 
+    }
   
     const { Price, img, desc, discount, review, title, subTitle, originalPrice,_id
     } = products;
@@ -40,7 +40,10 @@ const ProductsDetails = () => {
                     <div className='mt-5 d-flex align-items-center gap-5'>
                     
                         <button onClick={() => addItem(products)} type="button" class="btn btn-info">Add to cart</button>
-                        <button type="button" class="btn btn-warning">Buy Now!</button>
+                        <button onClick={() => {
+                            addItem(products);
+                            handleBuyNow();
+                        }}   type="button" class="btn btn-warning">Buy Now!</button>
 
                     </div>
                 </div>
